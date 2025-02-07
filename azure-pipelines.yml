@@ -22,7 +22,7 @@ steps:
   - script: |
       python -m pip install --upgrade pip
       pip install -r requirements.txt
-      displayName: 'Install dependencies'
+    displayName: 'Install dependencies'
 
  
   - task: ArchiveFiles@2
@@ -51,7 +51,5 @@ steps:
   - script: | 
 
       pip install pytest pytest-azurepipelines 
-
       pytest 
-
-      displayName: 'pytest'
+    displayName: 'pytest'
